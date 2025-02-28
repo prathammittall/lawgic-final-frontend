@@ -47,21 +47,8 @@ function Hero() {
               <div className={`bg-white rounded-full p-2 pl-6 flex items-center transition-all duration-300 ${
                 searchFocus ? 'ring-2 ring-[#251c1a]' : ''
               }`}>
-                <input
-                  type="text"
-                  placeholder="Search legal cases, documents, precedents..."
-                  className="bg-transparent w-full py-3 outline-none text-[#251c1a] placeholder-[#251c1a]/50"
-                  onFocus={() => setSearchFocus(true)}
-                  onBlur={() => setSearchFocus(false)}
-                  value={searchValue}
-                  onChange={(e) => setSearchValue(e.target.value)}
-                />
-                
-                <button className={`ml-2 rounded-full p-4 flex items-center justify-center transition-all ${
-                  searchFocus ? 'bg-[#251c1a] text-white' : 'bg-[#251c1a]/10 text-[#251c1a]'
-                }`}>
-                  <FaSearch className={`${searchFocus ? 'scale-110' : ''} transition-transform`} />
-                </button>
+                <input type="text" placeholder="Search legal cases, documents, precedents..." className="bg-transparent w-full py-3 outline-none text-[#251c1a] placeholder-[#251c1a]/50" onFocus={() => setSearchFocus(true)} onBlur={() => setSearchFocus(false)} value={searchValue} onChange={(e) => setSearchValue(e.target.value)}/><a href='https://lawgic-login-auth.vercel.app/'><button className={`ml-2 rounded-full p-4 flex items-center justify-center transition-all ${searchFocus ? 'bg-[#251c1a] text-white' : 'bg-[#251c1a]/10 tex[#251c1a]'}`}><FaSearch className={`${searchFocus ? 'scale-110' : ''} transition-transform`} />
+                </button></a>
               </div>
             </div>
             
